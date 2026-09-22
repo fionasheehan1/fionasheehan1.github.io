@@ -1,0 +1,350 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f8fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
+
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #17365d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #17365d;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #eef3f8
+    );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #17365d;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #17365d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0f2744;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #17365d;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    background-color: #ffffff;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 17px;
+    color: #555;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education {
+    background-color: #f7f8fa;
+}
+
+.education-card {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-left: 5px solid #17365d;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.education-card h3 {
+    color: #17365d;
+    margin-bottom: 5px;
+}
+
+.education-card .degree {
+    font-weight: bold;
+}
+
+.education-card .gpa {
+    margin-top: 8px;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+    background-color: #ffffff;
+}
+
+.experience-container {
+    max-width: 950px;
+    margin: auto;
+}
+
+.experience-item {
+    background-color: #f7f8fa;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border-left: 4px solid #17365d;
+}
+
+.experience-item h3 {
+    color: #17365d;
+    margin-bottom: 3px;
+}
+
+.experience-item .company {
+    font-weight: bold;
+}
+
+.experience-item .date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.experience-item ul {
+    margin-left: 20px;
+}
+
+.experience-item li {
+    margin-bottom: 7px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    background-color: #f7f8fa;
+}
+
+.skills-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background-color: #17365d;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* =========================
+   LEADERSHIP
+========================= */
+
+.leadership {
+    background-color: #ffffff;
+}
+
+.leadership-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    background-color: #f7f8fa;
+    border-radius: 6px;
+}
+
+.leadership-card h3 {
+    color: #17365d;
+}
+
+.leadership-card ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.leadership-card li {
+    margin-bottom: 7px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #102944;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .experience-item,
+    .education-card,
+    .leadership-card {
+        padding: 20px;
+    }
+}
